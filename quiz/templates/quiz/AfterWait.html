@@ -1,0 +1,12 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block content  %}
+	<p> Let us calculate you results before moving to some questions about your performance!</p>
+    {% next_button %}
+{% endblock %}
+{% block scripts %}
+<script>
+window.onload = $(".well").hide();
+</script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block content  %}
+	<p> Now your group will be re-shuffled and you are going to face another mate in the group. </p>
+    {% next_button %}
+{% endblock %}
+{% block scripts %}
+<script>
+window.onload = $(".well").hide();
+</script>
+{% endblock %}

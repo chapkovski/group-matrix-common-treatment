@@ -1,0 +1,19 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Question {{ player.round_number }} of {{ Constants.num_rounds }}
+{% endblock %}
+
+{% block content %}
+
+    <img src="{% static image_path1 %}" height="200" width="400" />
+    <img src="{% static image_path2 %}"  height="150" width="300"/>
+
+    
+    {% formfield player.submitted_answer with label=player.question %}
+
+    {% next_button %}
+
+{% endblock %}
+
